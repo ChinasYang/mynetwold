@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Swiper中文网基础演示(www.swiper.com.cn)</title>
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="css/index.css">
+<script src='js/jquery-1.8.3.js'></script>
+<!-- <script src='js/vue.js'></script> -->
+<style>
+/*body{
+	perspective: 700;
+	position:relative;
+	transform-style:preserve-3d;
+}*/
+.top1{
+	/*position:absolute;*/
+	animation:canvas 3s;
+	/*top:50px;
+	left:40%;*/
+	margin:0 auto;
+
+}
+/* @keyframes canvas{
+	1%{ transform:rotateX(-250deg);transform:rotateZ(-200deg);transform: scale(6,6);};
+	 
+	80%{ transform:rotateX(0deg);transform:rotateZ(0deg);transform: scale(2,2); };
+} */
+ @keyframes canvas{
+ 	/*0%{ transform:rotate(0deg); transform: scale(0,0);opacity:0.3}*/
+	1%{  transform:rotate(300deg); transform: scale(6,6);opacity:0.3};
+	 
+	100%{  transform:rotate(20deg);  transform: scale(2,2); opacity:1};
+} 
+</style>
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide first-slide">
+				<div class='beijing'>
+					<p>
+						<span>W</span>
+						<span>E</span>
+						<span>L</span>
+						<span>C</span>
+						<span>O</span>
+						<span>M</span>
+						<span>E</span>
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide second-slide">
+				<!-- <header></header> 组件 -->
+				<div class='top1'>WORKS</div>
+				<ul class='second-radius'>
+					<li class='cssh5'>
+						<span>CSS3 and H5</span>
+						<dl>
+							<dt>熟悉CSS3 熟悉H5</dt>
+							<dd>熟悉并喜爱H5和C3，能结合H5+C3知识制作时下流行炫酷的html5网站，制作响应式网站项目。喜欢查看特效交流的网站。</dd>
+						</dl>
+					</li>
+					<li class='Sublime'>
+						<span>CSS3 and H5</span>
+						<dl>
+							<dt>熟悉CSS3 熟悉H5</dt>
+							<dd>熟悉并喜爱H5和C3，能结合H5+C3知识制作时下流行炫酷的html5网站，制作响应式网站项目。喜欢查看特效交流的网站。</dd>
+						</dl>
+					</li>
+					<li class='JS'>
+						<span>CSS3 and H5</span>
+						<dl>
+							<dt>熟悉CSS3 熟悉H5</dt>
+							<dd>熟悉并喜爱H5和C3，能结合H5+C3知识制作时下流行炫酷的html5网站，制作响应式网站项目。喜欢查看特效交流的网站。</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="swiper-slide third-slide">
+				<!-- <header></header> 组件--> 
+				<div class='third-slide-bj'>
+					<div class='top1'>WORKS</div>
+					<div class='third-content'>
+						<div class='four-son'>
+							<div class='third-one active'>theme</div>
+							<div class='third-one'>icone</div>
+							<div class='third-one'>banner</div>
+							<div class='third-one'>h5</div>
+						</div>
+						<ul class='liulang'>
+							<li class="none first">
+									<div class='none-one'></div>
+									<div class='none-two'></div>
+									<div class='none-three'></div>
+									<div class='none-four'></div>
+							</li>
+							 <li class='second'>ooo</li><!-- 轮播图-->
+							<li class='third'>uil</li><!-- 碎镜轮播图-->
+							<li class='fourth'>yt</li><!-- h5动画-->
+						</ul>
+					</div>
+				</div>	
+			</div>
+			<div class="swiper-slide fourth-slide">
+				<div class='beijing'>
+					<!-- <header></header> 组件 -->
+					<div class='top1'>WORKS</div>
+					<div class='interdiusmy'>
+							<ul class='myname'>
+								<li>姓名：杨伟达</li>
+								<li>年龄：24岁</li>
+								<li>学历：大专</li>
+								<li>职业：web前段</li>
+								<li>兴趣爱好：看书，看电影</li>
+							</ul>
+							<ul class='lianxi'>
+								<li>姓名：杨伟达</li>
+								<li>年龄：24岁</li>
+								<li>学历：大专</li>
+								<li>职业：web前段</li>
+								<li>兴趣爱好：看书，看电影</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-scrollbar"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+<script src="js/swiper.js"></script>
+<script>
+	window.onload = function(){
+		var mySwiper = new Swiper('.swiper-container',{
+		    // loop: true,					//是无限循环的
+			direction: 'vertical',			//垂直的轮播图
+			height : window.innerHeight,	//适应浏览器的高度
+			scrollbar:'.swiper-scrollbar',  //生成滚动条
+			mousewheelControl : true,       //鼠标控制滚动
+			pagination : '.swiper-pagination',  //改变轮播图的小圆点样式
+			paginationClickable :true,      //点击轮播图的小圆点切换图片
+			onSlideChangeStart: function(swiper){	
+
+		    }
+
+
+		});
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Swiper中文网基础演示(www.swiper.com.cn)</title>
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="css/index.css">
+<script src='js/jquery-1.8.3.js'></script>
+<!-- <script src='js/vue.js'></script> -->
+<style>
+/**{
+	margin:0;
+	padding:0;
+}
+html ,body ,.swiper-container,.swiper-wrapper{width:100%;height:100%;}
+.blue-slide{
+	background:blue;
+}
+.red-slide{
+	background:red;
+}
+.orange-slide{
+	background:orange;
+}*/
+/*body{
+	perspective: 700;
+	position:relative;
+	transform-style:preserve-3d;
+}*/
+.top1{
+	position:absolute;
+	top:50px;
+	left:40%;
+	margin:0 auto;
+	transform-origin:top;
+	/*transform:rotate(250deg) scale(3);
+	transition: all 2s;*/
+/*	animation:canvas1 4s;
+	animation:canvas2 4s;
+}*/
+/*@keyframes canvas1{
+	1%{ transform:rotate(0deg);};
+	100%{ transform:rotate(300deg);};
+}
+@keyframes canvas2{
+	1%{ transform: scale(3,3);opacity:0.3};
+	1%{ transform: scale(1,1); opacity:1};
+}*/
+</style>
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide first-slide">
+				<div class='beijing'>
+					<p>
+						<span>W</span>
+						<span>E</span>
+						<span>L</span>
+						<span>C</span>
+						<span>O</span>
+						<span>M</span>
+						<span>E</span>
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide second-slide">
+				<!-- <header></header> 组件 -->
+				<div class='top1'>WORKS</div>
+				<ul class='second-radius'>
+					<li class='cssh5'>
+						<span>CSS3 and H5</span>
+						<dl>
+							<dt>熟悉CSS3 熟悉H5</dt>
+							<dd>熟悉并喜爱H5和C3，能结合H5+C3知识制作时下流行炫酷的html5网站，制作响应式网站项目。喜欢查看特效交流的网站。</dd>
+						</dl>
+					</li>
+					<li class='Sublime'>
+						<span>CSS3 and H5</span>
+						<dl>
+							<dt>熟悉CSS3 熟悉H5</dt>
+							<dd>熟悉并喜爱H5和C3，能结合H5+C3知识制作时下流行炫酷的html5网站，制作响应式网站项目。喜欢查看特效交流的网站。</dd>
+						</dl>
+					</li>
+					<li class='JS'>
+						<span>CSS3 and H5</span>
+						<dl>
+							<dt>熟悉CSS3 熟悉H5</dt>
+							<dd>熟悉并喜爱H5和C3，能结合H5+C3知识制作时下流行炫酷的html5网站，制作响应式网站项目。喜欢查看特效交流的网站。</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="swiper-slide third-slide">
+				<!-- <header></header> 组件--> 
+				<div class='third-slide-bj'>
+					<div class='top1'>WORKS</div>
+					<div class='third-content'>
+						<div class='four-son'>
+							<div class='third-one active'>icone</div>
+							<div class='third-one'>banner</div>
+							<div class='third-one'>h5</div>
+							<div class='third-one'>theme</div>
+						</div>
+						<ul class='liulang'>
+							<li class="none first">
+									<div class='none-one'></div>
+									<div class='none-two'></div>
+									<div class='none-three'></div>
+									<div class='none-four'></div>
+									<div class='none-five'></div>
+									<div class='none-six'></div>
+							</li>
+							 <li class='second' id='second'>
+							 	<div class='second-lunbo'></div>
+							 	<div class='second-lunbo'></div>
+							 	<div class='second-lunbo'></div>
+							 	<div class='second-lunbo'></div>
+							 </li><!-- 轮播图-->
+							<li class='third'>
+								
+							</li><!-- 碎镜轮播图-->
+							<li class='fourth'>yt</li><!-- h5动画-->
+						</ul>
+					</div>
+				</div>	
+			</div>
+			<div class="swiper-slide fourth-slide">
+				<div class='beijing'>
+					<!-- <header></header> 组件 -->
+					<div class='top1'>WORKS</div>
+					<div class='interdiusmy'>
+							<ul class='myname'>
+								<li>姓名：杨伟达</li>
+								<li>年龄：24岁</li>
+								<li>学历：大专</li>
+								<li>职业：web前段</li>
+								<li>兴趣爱好：看书，看电影</li>
+							</ul>
+							<ul class='lianxi'>
+								<li>姓名：杨伟达</li>
+								<li>年龄：24岁</li>
+								<li>学历：大专</li>
+								<li>职业：web前段</li>
+								<li>兴趣爱好：看书，看电影</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-scrollbar"></div>
+		<div class="swiper-pagination"></div>
+		<div id='aaaa'></div>
+	</div>
+<script src="js/swiper.js"></script>
+<script type="text/javascript">
+$(function(){
+		 /*$(document).trigger(function(){
+		 	alert(000000)
+		 })*/
+		$("#aaaa").click(function(){
+			alert("非标准浏览不能浏览，请下载更高版本的浏览器");
+		})
+		$("#aaaa").trigger('click');
+
+		$('.first>div').css({'width':'0px','height':'0px'})
+		var mySwiper = new Swiper('.swiper-container',{
+	    // loop: true,					//是无限循环的
+		direction: 'vertical',			//垂直的轮播图
+		height : window.innerHeight,	//适应浏览器的高度
+		scrollbar:'.swiper-scrollbar',  //生成滚动条
+		mousewheelControl : true,       //鼠标控制滚动
+		pagination : '.swiper-pagination',  //改变轮播图的小圆点样式
+		paginationClickable :true,      //点击轮播图的小圆点切换图片
+		onSlideChangeStart: function(swiper){	
+			$('p>span').animate({fontSize:'0px',opacity:'0.3',left:'10px'},100);
+
+			if(swiper.activeIndex == 0){
+				$('p>span').animate({fontSize:'0px',opacity:'0.1',left:'50px'},200);
+				$('p>span').animate({fontSize:'60px',opacity:'1',left:'50px'},1000);
+			}
+			else{
+				$('p>span').animate({fontSize:'0px',opacity:'0.3',left:'10px'},1);
+			}
+			 if(swiper.activeIndex == 1){
+			 	// hover事件
+			 	// $('.second-radius>li>span').mouseover(function(){
+			 	// 	$('.cssh5>span').css({'width':'220px','height':'220px','lineHeight':'220px'})
+			 	// });
+			 	// $('.second-radius>li>span').mouseup(function(){
+			 	// 	$('.cssh5>span').css({'width':'200px','height':'200px','lineHeight':'200px'})
+			 	// })
+			 	// alert()
+			 	
+
+			 	 vn()
+				// $('.top1').animate({opacity:'0.3',transform:'scale(4,4) otate(230deg)'},800);
+				// $('.top1').css({opacity:'1',transform:'scale(1,1) rotate(0deg)'});
+				// $('.top1').animate({transform:'rotate(0deg)'},800);
+				// $('.top1').animate({transform:'rotate(360deg)'},800);
+				// $('.top1').animate({transform:'scale(1,1)',transform:'rotate(360deg)'},1000);
+				/*$('.second-slide>.top1').animate({transform: 'scale(2,2)',transform:'rotate(0deg)'},1000)*/
+
+			 	// $('.cssh5').animate({left:"15%",},'slow');
+			 	$('.cssh5').animate({left:"19%",},'slow');
+			 	$('.Sublime').animate({top:"50%"},'slow');
+			 	$('.Sublime').animate({top:"40%"},'slow');
+			 	// $('.JS').animate({left:"75%"},'slow');
+			 	$('.JS').animate({left:"60%"},'slow');
+			 }
+			 else{
+			 	$('.cssh5').animate({left:"10%",},'slow');
+			 	$('.Sublime').animate({top:"50%"},'slow');
+			 	$('.JS').animate({left:"75%"},'slow');
+			 };
+			if(swiper.activeIndex == 2){
+				$('.first>div').animate({'width':'150px','height':'90px','margin':'25px','opacity':'1','line-height':'90px'},2000)
+				// console.log($("div.third-one").eq(0).animate())
+				// console.log($($("div.third-one")[0]))	//类似获取元素方法getElementByClassName('')[0]
+				 //console.log($("div.third-one:nth-of-type(0)"))	选择器获得
+				vn()
+				$('.four-son').animate({width:"100px",height:"150px"},800);
+				var off=false;
+				$('.third-one').eq(1).click(function(){
+					// $('.second').animate({width:'0px',hight:'0px'},20);
+					// $('.second').animate({width:'0px',hight:'0px'},800);
+					
+					// var off=false;
+					aa(off)
+					off=true;
+					// alert()
+				});
+				// $('.liulang').animation({width:'400px',height:'0px'})
+				// 第三模块的第二个按钮实现动画开始
+				// $('.third-one').eq(1).click(function(){
+				// 	$('none-one').animate({backgroundColor:'white',opacity:0.4,top:'165px',left:'245px',rotateX:"(360deg)"})
+				// })
+
+				$(".four-son>div").click(function(){
+					console.log(1111)
+					$(this).addClass("active").siblings().removeClass('active');
+					console.log(222)
+					$('.liulang>li').eq($(this).index()).addClass("none").siblings().removeClass('none');
+				});
+				$('.first>div').click(function(){
+					$(this).addClass("active").siblings().removeClass('active');
+				})
+			}
+			else{
+				$('.four-son').animate({width:"0px",height:"0px"},100);
+				stop();
+			}
+			if(swiper.activeIndex == 3){
+		    	// init();
+		    	vn()
+				$("ul.myname").animate({left:'100px'},"slow");
+				$("ul.lianxi").animate({right:'-50px'},"slow");
+				$("ul.lianxi").show('slow')
+				$("ul.lianxi").animate({right:'0px'},"slow");
+			}else{
+				$("ul.myname").animate({left:'0px'},"slow");
+				$("ul.lianxi").animate({right:'0px'},"slow");
+
+			}
+	      // alert(swiper.activeIndex);
+	    }
+
+
+	  });
+	  		function vn(){
+	  			$('.top1').animate({opacity:'0.3',transform:'scale(4,4)',transform:'rotate(720deg)'},1200);
+				$('.top1').animate({opacity:'1',transform:'scale(1,1)',transform:'rotate(0deg)'},1200);
+	  		}
+
+	  		var timer;
+	  		function aa(offon){
+	  			var off=false||offon;
+	  			var moveStep=2;
+		        var oSecond=document.getElementById("second");
+		        var oLunbo=oSecond.getElementsByClassName("second-lunbo");
+		        var length=oLunbo.length;
+		        if(!off){
+		        	off=true;
+		        	timer=setInterval(
+			          function(){
+			            for(var i=0;i<oLunbo.length;i++){   
+			              if( parseInt( oLunbo[i].style.left)<=-1*parseInt(getStyle(oSecond,"width"))  )
+			              {
+			                oLunbo[i].style.left=(length-1)*parseInt(getStyle(oSecond,"width"))+"px";
+			              }
+			              oLunbo[i].style.left=parseInt(getStyle(oLunbo[i],"left"))-moveStep+"px";
+			            }
+			          },60);
+		        }
+		        
+
+		        function getStyle(obj,attr){
+		          return obj.currentStyle? obj.currentStyle[attr]:getComputedStyle(obj,null)[attr];
+		        }
+		        return timer
+	  		}
+	  		function stop() {
+	  			
+	        	clearInterval(timer);
+	        	// alert("定时器关了");
+	        }
+
+		  // function init(){$("ul.myname").animate({left:'100px'},"slow");
+				// $("ul.lianxi").animate({right:'10px'},"slow");};
+		// console.log(Swiper.activeIndex)
+
+})
+	  
+
+</script>
+</body>
+</html>
